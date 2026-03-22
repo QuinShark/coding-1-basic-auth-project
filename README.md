@@ -48,21 +48,20 @@ In this project, you will design and build a web application with a basic **logi
 |----------|
 * Implement password validation rules:
   - At least 1 uppercase letter
-    - At least 1 lowercase letter
-      - At least 1 number
-        - At least 1 special character
-        * Display a clear error message if the password does not meet the requirements.
-        * Ensure that registration only succeeds if the password meets the rules.
-        * Test the validation thoroughly with multiple password examples.
+  - At least 1 lowercase letter
+  - At least 1 number
+  - At least 1 special character
+* Display a clear error message if the password does not meet the requirements.
+* Ensure that registration only succeeds if the password meets the rules.
+* Test the validation thoroughly with multiple password examples.
 
-        | Phase V: Reflection + Demo Video (20 pts) |
-        |----------|
-        * Record a screen-share of another student testing your login system.
-        * Show a screen-share of your code and explain how each phase was implemented.
-        * Describe at least 3 portions of your code that you are most proud of.
-        * Both group members should speak during the video.
+| Phase V: Reflection + Demo Video (20 pts) |
+|----------|
+* Record a screen-share of another student testing your login system.
+* Show a screen-share of your code and explain how each phase was implemented.
+* Describe at least 3 portions of your code that you are most proud of.
+* Both group members should speak during the video.
 
-<<<<<<< HEAD
 | Optional Bonus (+10 pts / each) |
 |----------|
 * Add a “secret page” that displays the user’s name after login.
@@ -70,9 +69,6 @@ In this project, you will design and build a web application with a basic **logi
 * Implement a “Reset Database” button for easy testing.
 * Add additional security features (e.g., session timeouts, email verification).
 =======
-        | Optional Bonus (+10 pts / each) |
-        |----------|
-        * Add a “secret page” that displays the user’s name after login.
         * Style the pages with CSS to improve the user interface.
         * Implement a “Reset Database” button for easy testing.
         * Add additional security features (e.g., session timeouts, email verification).
