@@ -1,4 +1,5 @@
 # Your code will go herefrom flask import Flask, request, redirect, url_for, render_template_string, session
+from flask import Flask, request, redirect, url_for, render_template_string, session
 import sqlite3
 import bcrypt
 import re
@@ -16,16 +17,15 @@ def is_valid_password(password):
     return False
 
 def get_db():
-    conn = sqlite3.connect("users.db")
+    conn = sqlite3.connect("profile.db")
     conn.row_factory = sqlite3.Row
     return conn
 
 def init_db():
     conn = get_db()
     conn.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            username TEXT PRIMARY KEY,
-            password TEXT
+        CREATE TABLE IF NOT EXISTS profile (
+            interests TEXT
         )
     """)
     conn.commit()
@@ -119,6 +119,8 @@ secret_page = f"""{base_style}
 <h2>🎉 Secret Room</h2>
 <h3>Welcome, {{{{ username }}}}!</h3>
 <p>You got into the secret room!</p>
+<form method="POST">
+    <input name="interests" type="text" placeholder="Input Interests"><br>
 <a href="/logout"><button>Logout</button></a>
 </div>
 """
